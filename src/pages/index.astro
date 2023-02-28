@@ -1,15 +1,31 @@
 ---
+import SiteLayout from "../layouts/siteLayout.astro";
 ---
+<head>
+	<meta name="description" content="Home Screen">
+</head>
+<SiteLayout title="Home Page">
+	<div class="w-screen h-screen flex flex-col justify-center items-center text-center">
+		<h1 id="text" class="md:text-8xl text-4xl font-bold text-white clip-path-square text-center">Mark Joven Reyes</h1>
+		<p class="md:text-4xl text-2xl text-white">Web and Mobile Developer</p>
+	</div>
+	<script>
+		import SplitType from "split-type"
+		import {gsap} from 'gsap'
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+		let text = new SplitType('#text');
+		let characters = document.querySelectorAll('.char');
+
+		for(let i = 0; i < characters.length; i++) {
+			characters[i].classList.add('translate-y-full')
+		}
+
+		gsap.to('.char', {
+			y: 0,
+			stagger: 0.05,
+			delay: 0.02,
+			duration: 0.5
+		})
+
+	</script>
+</SiteLayout>
