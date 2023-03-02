@@ -1,6 +1,6 @@
 ---
 import Navbar from "../components/Navbar";
-const {title} = Astro.props;
+const {title, description} = Astro.props;
 ---
 <html lang="en">
 	<head>
@@ -12,6 +12,7 @@ const {title} = Astro.props;
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 		<title>{title}</title>
+		<meta name="description" content={description}>
 	</head>
 	<body class="bg-gradient-to-r from-night to-ebony-clay overflow-x-hidden justify-around">
 		<Navbar client:visible/>

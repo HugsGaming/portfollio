@@ -1,0 +1,12 @@
+---
+import SiteLayout from "./siteLayout.astro";
+
+const {frontmatter} = Astro.props
+const {title} = frontmatter;
+---
+<SiteLayout>
+    <div class="prose prose-slate mx-auto prose-p:text-white prose-headings:text-white">
+        <h1>{title}</h1>
+        <slot />
+    </div>
+</SiteLayout>

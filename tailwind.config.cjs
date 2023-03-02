@@ -19,6 +19,7 @@ module.exports = {
 		},
 	},
 	plugins: [
-		require('tailwind-clip-path')
+		require('tailwind-clip-path'),
+		require('@tailwindcss/typography')
 	],
 }
