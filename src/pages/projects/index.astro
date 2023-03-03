@@ -5,7 +5,7 @@ const projects = await Astro.glob('./*.md')
 <SiteLayout>
     {
         projects.slice().map((project)=> (
-            <article>
+            <article class="">
                 <h2 class="text-white">{project.frontmatter.title}</h2>
                 <p class="text-white">{project.frontmatter.description}</p>
                 <a class="text-white" href={project.url}>Read More</a>

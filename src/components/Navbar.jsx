@@ -10,7 +10,7 @@ function Navbar() {
                 <div>
                     <h1 className='font-sans'>Portfolio</h1>
                 </div>
-                <div className={`md:static md:min-h-fit absolute bg-white min-h-[60vh] left-0 ${menuClick ? 'top-[9%]' : 'top-[-100%]' }  md:w-auto w-full flex items-center px-5`}>
+                <div className={`md:static md:min-h-fit absolute bg-white min-h-[60vh] left-0 ${menuClick ? 'top-[9%]' : 'top-[-100%]' }  md:w-auto w-full flex items-center px-5 z-[100]`}>
                     <ul className='flex md:flex-row flex-col md:items-center md:gap-4 gap-8'>
                         <li>
                             <a className='hover:text-gray-500' href="/">Home</a>
