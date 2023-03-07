@@ -5,7 +5,7 @@ const {frontmatter} = Astro.props
 const {title} = frontmatter;
 ---
 <SiteLayout>
-    <div class="prose prose-slate mx-auto prose-p:text-white prose-headings:text-white">
+    <div class="prose prose-slate mx-auto prose-p:text-gray-900 prose-headings:text-black bg-white prose-h1:text-4xl prose-h1:text-center prose-p:text-center mt-10 rounded-lg">
         <h1>{title}</h1>
         <slot />
     </div>

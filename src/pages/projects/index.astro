@@ -1,15 +1,18 @@
 ---
+import ProjectCard from "../../components/ProjectCard";
 import SiteLayout from "../../layouts/siteLayout.astro";
 const projects = await Astro.glob('./*.md')
 ---
-<SiteLayout>
+<SiteLayout title="Projects" description="Projects">
+    <h1 class="text-white text-2xl text-center my-auto">Projects</h1>
     {
         projects.slice().map((project)=> (
-            <article class="">
-                <h2 class="text-white">{project.frontmatter.title}</h2>
-                <p class="text-white">{project.frontmatter.description}</p>
-                <a class="text-white" href={project.url}>Read More</a>
-            </article>
+            // <article class="">
+            //     <h2 class="text-white">{project.frontmatter.title}</h2>
+            //     <p class="text-white">{project.frontmatter.description}</p>
+            //     <a class="text-white" href={project.url}>Read More</a>
+            // </article>
+            <ProjectCard title={project.frontmatter.title} image={project.frontmatter.image} description={project.frontmatter.description} url={project.url}/>
         ))
     }
 </SiteLayout>
