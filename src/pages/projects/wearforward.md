@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/projectLayout.astro"
-title: It is Normal
-description: An Side Scrolling RPG that concerns with the struggles of an OFW parent during the Covid-19 pandemic
+title: Wear Forward
+description: The Philippines's premier clothing as a service e-commerce site that sells and upcycles clothes
 image: "/project_images/wearforward.svg"
 ---
 ![Wear Forward](/project_images/wearforward.svg)
