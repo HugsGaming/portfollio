@@ -21,9 +21,6 @@ function Navbar() {
                         <li>
                             <a className='hover:text-gray-500' href="/projects">Projects</a>
                         </li>
-                        <li>
-                            <a className='hover:text-gray-500' href="/contact">Contact Us</a>
-                        </li>
                     </ul>
                 </div>
                 <div className='flex items-center gap-6' onClick={handleMenuClick}>
