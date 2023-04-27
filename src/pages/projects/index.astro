@@ -4,7 +4,7 @@ import SiteLayout from "../../layouts/siteLayout.astro";
 const projects = await Astro.glob('./*.md')
 ---
 <SiteLayout title="Projects" description="Projects">
-    <h1 class="text-white text-2xl text-center my-auto">Projects</h1>
+    <h1 class="text-white text-2xl text-center p-4">Projects</h1>
     {
         projects.slice().map((project)=> (
             // <article class="">
